@@ -11,6 +11,8 @@ jobs:
   metrics-left:
     runs-on: ubuntu-latest
     environment: production
+    permissions:
+      contents: write
     steps:
       - name: left
         uses: lowlighter/metrics@latest
@@ -44,6 +46,8 @@ jobs:
   metrics-right:
     runs-on: ubuntu-latest
     environment: production
+    permissions:
+      contents: write
     steps:
       - name: right
         uses: stalomeow/metrics@projects-v2
